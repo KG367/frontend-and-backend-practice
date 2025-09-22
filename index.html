@@ -3,56 +3,57 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/styles.css">
         <title>Семестровая работа</title>
     </head>
     <body>
-        <div id="header">Хэдер</div>
-        <div id="menu">
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="pages/news.html">Новости</a></li>
-                <li><a href="pages/practices.html">Практики</a></li>
-                <li><a href="pages/goods.html">Товары</a></li>
-                <li><a href="pages/contacts.html">Контакты</a></li>
-            </ul>
+        <div class="page-container">
+            <div class="header">Это я</div>
+            <div class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/news.html">Новости</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/practices.html">Практики</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/goods.html">Товары</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="profile-header">
+                    <p class="profile-title">Информация об авторе</p>
+                    <img class="profile-photo" src="images/photo.png" alt="Фото автора" height="250">
+                    <p class="profile-name">Гармажанов Константин Михайлович</p>
+                    <p class="profile-group">ЭФБО-16-24</p>
+                </div>
+                <div class="about-me">
+                    <p>Обо мне: Я родился в Белгороде в 06м в центре. Глупость рано
+                    ударила в голову. В десять активно ругался.
+                    Еле выжил в школе. Воровал деньги в
+                    раздевалке.</p>
+                </div>
+                <div class="skills-container">
+                    <div class="skill-tag">Скрытни</div>
+                    <div class="skill-tag">Ломал вайфай</div>
+                    <div class="skill-tag">Качал киберпанк на школьные компы</div>
+                    <div class="skill-tag">Очень хороший и весёлый человек. Характер общительный.</div>
+                </div>
+                <div class="experience-section">
+                    <h2 class="section-title">Мой опыт работы:</h2>
+                    <div class="experience-card">
+                        <h3 class="experience-title">Опыт 1</h3>
+                        <p class="experience-desc">Гонял курей.</p>
+                    </div>
+                    <div class="experience-card">
+                        <h3 class="experience-title">Опыт 2</h3>
+                        <p class="experience-desc">Убегал от гусей.</p>
+                    </div>
+                    <div class="experience-card">
+                        <h3 class="experience-title">Опыт 3</h3>
+                        <p class="experience-desc">Что-то с собаками.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">Москва 2025</div>
         </div>
-        <div id="content">
-            <p>Информация об авторе</p>
-            <img src="images/photo.png" alt="Фото автора" height="250">
-            <p>Гармажанов Константин Михайлович</p>
-            <p>ЭФБО-16-24</p>
-            <p>Обо мне: Я родился в Белгороде в 06м в центре. Глупость рано
-            ударила в голову. В десять активно ругался.
-            Еле выжил в школе. Воровал деньги в
-            раздевалке.</p>
-            <div>
-                Скрытни
-            </div>
-            <div>
-                Ломал вайфай
-            </div>
-            <div>
-                Качал киберпанк на школьные компы
-            </div>
-            <div>
-                Очень хороший и весёлый человек. Характер общительный.
-            </div>
-            <div>
-                Мой опыт работы:
-                <div>
-                    Опыт 1<br>
-                    Гонял курей.
-                </div>
-                <div>
-                    Опыт 2<br>
-                    Убегал от гусей.
-                </div>
-                <div>
-                    Опыт 3<br>
-                    Что-то с собаками.
-                </div>
-            </div>
-        </div>
-        <div id="footer">Футер</div>
     </body>
 </html>
