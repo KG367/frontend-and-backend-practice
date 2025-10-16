@@ -3,42 +3,56 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../style/styles.css">
         <title>Товары</title>
+        <link rel="stylesheet" href="../style/styles.css">
     </head>
     <body>
         <div class="page-container">
-            <div class="header">Это я</div>
-            <div class="nav">
+            <header class="header">
+                <h1>Наши товары</h1>
+            </header>
+
+            <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
                     <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                    <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
+                    <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li> 
                     <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
                 </ul>
-            </div>
-            <div class="content">
-                <h1 class="goods-title">Товары</h1>
-                <div class="goods-container">
-                    <div class="goods-tag">
-                        <img class="goods-photo" src="../images/enlarger.jpg" alt="увеличитель" height="250">
-                        <h2 class="goods-name">Увеличитель</h2>
-                        <p class="goods-price">500р+доставка от меня</p>
-                    </div>
-                    <div class="goods-tag">
-                        <img class="goods-photo" src="../images/frog.png" alt="лягущка" height="250">
-                        <h2 class="goods-name">Маленькая лягушка</h2>
-                        <p class="goods-price">от 1.84 руб.</p>
-                    </div>
-                    <div class="goods-tag">
-                        <img class="goods-photo" src="../images/bud.jpg" alt="почка" height="250">
-                        <h2 class="goods-name">Почка</h2>
-                        <p class="goods-price">40 000р.</p>
-                    </div>
+            </nav>
+            <main class="content">
+                <h1 class="section-title">Каталог товаров</h1>
+                
+                <div class="products-grid">
+                    <article class="product-card">
+                        <img class="product-image" src="../images/enlarger.jpg" alt="увеличитель">
+                        <h3 class="product-name">Увеличитель</h3>
+                        <p class="product-price">500р+доставка от меня</p>
+                    </article>
+
+                    <article class="product-card">
+                        <img class="product-image" src="../images/frog.png" alt="лягущка">
+                        <h3 class="product-name">Маленькая лягушка</h3>
+                        <p class="product-price">от 1.84 руб.</p>
+                    </article>
+                    
+                    <article class="product-card">
+                    <img class="product-image" src="../images/bud.jpg" alt="почка">
+                        <div class="product-info">
+                            <h3 class="product-name">Почка</h3>
+                            <p>Качественная почка по доступной цене. Нужна всем и каждому. При покупке первой вторая в подарок.
+                            </p>
+                            <p class="product-price">40 000р.</p>
+                        </div>
+                    </article>
                 </div>
-            </div>
-            <div class="footer">Москва 2025</div>
+            </main>
+
+            <!-- Изменение: Заменили div на семантический тег -->
+            <footer class="footer">
+                <p>© 2024 Интернет-магазин. Все права защищены.</p>
+            </footer>    
         </div>
     </body>
 </html>

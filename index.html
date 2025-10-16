@@ -1,59 +1,94 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style/styles.css">
-        <title>Семестровая работа</title>
-    </head>
-    <body>
-        <div class="page-container">
-            <div class="header">Это я</div>
-            <div class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/news.html">Новости</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/practices.html">Практики</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/goods.html">Товары</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/contacts.html">Контакты</a></li>
-                </ul>
-            </div>
-            <div class="content">
-                <div class="profile-header">
-                    <p class="profile-title">Информация об авторе</p>
-                    <img class="profile-photo" src="images/photo.png" alt="Фото автора" height="250">
-                    <p class="profile-name">Гармажанов Константин Михайлович</p>
-                    <p class="profile-group">ЭФБО-16-24</p>
-                </div>
-                <div class="about-me">
-                    <p>Обо мне: Я родился в Белгороде в 06м в центре. Глупость рано
-                    ударила в голову. В десять активно ругался.
-                    Еле выжил в школе. Воровал деньги в
-                    раздевалке.</p>
-                </div>
-                <div class="skills-container">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles.css">
+    <title>Главная</title>
+</head>
+<body>
+    <!-- Основной контейнер -->
+    <article class="page-container">
+        
+        <!-- Шапка -->
+        <header class="header">
+            <h1>Это я</h1>
+        </header>
+
+        <!-- Навигация -->
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/news.html">Новости</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/practices.html">Практики</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/goods.html">Товары</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <article class="profile-header">
+                <h1 class="profile-title">Информация об авторе</h1>
+                <img class="profile-photo" src="images/photo.png" alt="Фото автора" height="250">
+                <h2 class="profile-name">Гармажанов Константин Михайлович</h2>
+                <p class="profile-group">ЭФБО-16-24</p>
+            </article>
+            
+            <!-- Обо мне -->
+            <section class="about-me">
+                <h2>Обо мне</h2>
+                <p>
+                    Я родился в Белгороде в 06м в центре. Глупость рано
+                ударила в голову. В десять активно ругался.
+                Еле выжил в школе. Воровал деньги в
+                раздевалке.
+                </p>
+            </section>
+            
+            <!-- Навыки -->
+            <section class="skills-container">
+                <h2>Мои навыки</h2>
+                <div class="skills-grid">
                     <div class="skill-tag">Скрытни</div>
                     <div class="skill-tag">Ломал вайфай</div>
                     <div class="skill-tag">Качал киберпанк на школьные компы</div>
                     <div class="skill-tag">Очень хороший и весёлый человек. Характер общительный.</div>
                 </div>
-                <div class="experience-section">
-                    <h2 class="section-title">Мой опыт работы:</h2>
-                    <div class="experience-card">
+            </section>
+            
+            <!-- Проекты -->
+            <section class="experience-section">
+                <h2 class="section-title">Мой опыт работы:</h2>
+                <article class="experience-grid">
+                    <article class="experience-card">
                         <h3 class="experience-title">Опыт 1</h3>
                         <p class="experience-desc">Гонял курей.</p>
-                    </div>
-                    <div class="experience-card">
+                    </article>
+                    <article class="experience-card">
                         <h3 class="experience-title">Опыт 2</h3>
                         <p class="experience-desc">Убегал от гусей.</p>
-                    </div>
-                    <div class="experience-card">
+                    </article>
+                    <article class="experience-card">
                         <h3 class="experience-title">Опыт 3</h3>
                         <p class="experience-desc">Что-то с собаками.</p>
-                    </div>
+                    </article>
                 </div>
-            </div>
-            <div class="footer">Москва 2025</div>
-        </div>
-    </body>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; Москва 2025</p>
+        </footer>
+    </div>
+</body>
 </html>
