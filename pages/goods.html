@@ -1,58 +1,73 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Товары</title>
-        <link rel="stylesheet" href="../style/styles.css">
-    </head>
-    <body>
-        <div class="page-container">
-            <header class="header">
-                <h1>Наши товары</h1>
-            </header>
 
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                    <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li> 
-                    <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
-                </ul>
-            </nav>
-            <main class="content">
-                <h1 class="section-title">Каталог товаров</h1>
-                
-                <div class="products-grid">
-                    <article class="product-card">
-                        <img class="product-image" src="../images/enlarger.jpg" alt="увеличитель">
-                        <h3 class="product-name">Увеличитель</h3>
-                        <p class="product-price">500р+доставка от меня</p>
-                    </article>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товары</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
 
-                    <article class="product-card">
-                        <img class="product-image" src="../images/frog.png" alt="лягущка">
-                        <h3 class="product-name">Маленькая лягушка</h3>
-                        <p class="product-price">от 1.84 руб.</p>
-                    </article>
-                    
-                    <article class="product-card">
-                    <img class="product-image" src="../images/bud.jpg" alt="почка">
-                        <div class="product-info">
-                            <h3 class="product-name">Почка</h3>
-                            <p>Качественная почка по доступной цене. Нужна всем и каждому. При покупке первой вторая в подарок.
-                            </p>
-                            <p class="product-price">40 000р.</p>
-                        </div>
-                    </article>
-                </div>
-            </main>
+<body>
+    <div class="page-container">
+        <header class="header">
+            <h1 class="header__title">Это я</h1>
+        </header>
 
-            <!-- Изменение: Заменили div на семантический тег -->
-            <footer class="footer">
-                <p>&copy; Москва 2025</p>
-            </footer>    
-        </div>
-    </body>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="../index.html">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="news.html">Новости</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="practices.html">Практики</a>
+                </li>
+                <li class="nav__item nav__item--active">
+                    <a class="nav__link" href="goods.html">Товары</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="content">
+            <h1 class="goods__title">Каталог товаров</h1>
+
+            <div class="goods">
+                <article class="goods-item">
+                    <img class="goods-item__image" src="../images/enlarger.jpg" alt="увеличитель">
+                    <h3 class="goods-item__title">Увеличитель</h3>
+                    <p class="goods-item__description">Конденсор залит чем-то непонятным но оно работает</p>
+                    <p class="goods-item__price">500р+доставка от меня</p>
+                </article>
+
+                <article class="goods-item">
+                    <img class="goods-item__image" src="../images/frog.png" alt="лягущка">
+                    <h3 class="goods-item__title">Маленькая лягушка</h3>
+                    <p class="goods-item__description">Захватывает ваше сердечко своей милотой</p>
+                    <p class="goods-item__price">от 1.84 руб.</p>
+                </article>
+
+                <article class="goods-item">
+                    <img class="goods-item__image" src="../images/bud.jpg" alt="почка">
+                    <div class="product-info">
+                        <h3 class="goods-item__title">Почка</h3>
+                        <p class="goods-item__description">Качественная почка по доступной цене. Нужна всем и каждому. При покупке первой вторая в подарок.
+                        </p>
+                        <p class="goods-item__price">40 000р.</p>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <!-- Изменение: Заменили div на семантический тег -->
+        <footer class="footer">
+            <p>&copy; Москва 2025</p>
+        </footer>
+    </div>
+</body>
+
 </html>

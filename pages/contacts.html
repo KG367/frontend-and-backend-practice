@@ -10,29 +10,39 @@
 
 <body>
     <div class="page-container">
-        <header class="header">Это я</header>
+        <header class="header">
+            <h1 class="header__title">Это я</h1>
+        </header>
         <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
-                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="../index.html">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="news.html">Новости</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="practices.html">Практики</a>
+                </li>
+                <li class="nav__item"><a class="nav__link" href="goods.html">Товары</a></li>
+                <li class="nav__item">
+                    <a class="nav__link" href="contacts.html">Контакты</a>
+                </li>
             </ul>
         </nav>
         <main class="content">
-            <section class="contacts-container">
-                <h2 class="section-title">Контакты</h2>
-                <article class="contact-info">
-                    <h3>Мыло:</h3>
-                    <p class="experience-title">garmazhanov.k.m@edu.mirea.ru</p>
-                    </articleм>
-                    <article class="contact-info">
-                        <h3>Адрес:</h3>
-                        <p>г. Москва, тер. Ленинские горы, 1</p>
-                    </article>
-                    <!-- Измененная кнопка для открытия модального окна -->
-                    <button class="contact-button" onclick="contactModal.showModal()">Написать мне</button>
+            <section class="contacts__container">
+                <h2 class="contacts__title">Контакты</h2>
+                <article class="contact">
+                    <h3 class="contact__name">Мыло:</h3>
+                    <p class="contact__info">garmazhanov.k.m@edu.mirea.ru</p>
+                </article>
+                <article class="contact">
+                    <h3 class="contact__name">Адрес:</h3>
+                    <p class="contact__info">г. Москва, тер. Ленинские горы, 1</p>
+                </article>
+                <!-- Измененная кнопка для открытия модального окна -->
+                <button class="contact__button" onclick="contactModal.showModal()">Написать мне</button>
             </section>
         </main>
         <footer class="footer">
@@ -127,7 +137,6 @@
                         event.preventDefault();
                     }
                 });
-            document.getElementById()
         </script>
     </div>
 </body>
