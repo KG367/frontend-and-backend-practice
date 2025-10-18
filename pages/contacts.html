@@ -12,6 +12,14 @@
     <div class="page-container">
         <header class="header">
             <h1 class="header__title">Это я</h1>
+            <!-- Переключалка тёмной темы -->
+            <div class="theme-switch__wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+            </div>
+            <script src="../scripts/dark theme.js"></script>
         </header>
         <nav class="nav">
             <ul class="nav__list">
@@ -24,8 +32,10 @@
                 <li class="nav__item">
                     <a class="nav__link" href="practices.html">Практики</a>
                 </li>
-                <li class="nav__item"><a class="nav__link" href="goods.html">Товары</a></li>
                 <li class="nav__item">
+                    <a class="nav__link" href="goods.html">Товары</a>
+                </li>
+                <li class="nav__item nav__item--active">
                     <a class="nav__link" href="contacts.html">Контакты</a>
                 </li>
             </ul>
@@ -87,7 +97,7 @@
                     </div>
                     <div class="modal-actions">
                         <!-- Кнопка отмены с автоматическим закрытием через form method="dialog" -->
-                        <!-- formnovalidate необходим для закрытия формы, так как есть обязательные -->
+                        <!-- formnovalidate необходим для закрытия формы, так как есть обязательные поля -->
                         <button type="submit" class="btn btn-secondary" formnovalidate>Отмена</button>
                         <!-- Кнопка отправки с обработкой через JavaScript -->
                         <button type="button" class="btn btn-primary" onclick="submitForm()">Отправить</button>
