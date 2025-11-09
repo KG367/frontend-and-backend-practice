@@ -1,114 +1,176 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/styles.css">
     <title>Главная</title>
+    <link rel="stylesheet" href="./style/styles.css">
 </head>
 
 <body>
-    <!-- Основной контейнер -->
     <div class="page">
         <!-- Шапка -->
         <header class="header">
-            <h1 class="header__title">Это я</h1>
-            <!-- Переключалка тёмной темы -->
-            <div class="theme-switch__wrapper">
-                <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox" />
-                    <div class="slider round"></div>
-                </label>
+            <div class="container">
+                <div class="header__content">
+                    <h1 class="header__title">Это я</h1>
+                    <p class="header__subtitle">Вот такой вот</p>
+                </div>
             </div>
-            <script src="scripts/dark theme.js"></script>
         </header>
+
         <!-- Навигация -->
         <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item nav__item--active">
-                    <a class="nav__link" href="index.html">Главная</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="pages/news.html">Новости</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="pages/practices.html">Практики</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="pages/goods.html">Товары</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="pages/contacts.html">Контакты</a>
-                </li>
-            </ul>
+            <div class="container">
+                <ul class="nav__list">
+                    <li class="nav__item nav__item--active">
+                        <a href="index.html" class="nav__link">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="pages/projects.html" class="nav__link">Проекты</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="pages/diary.html" class="nav__link">Дневник</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="pages/contacts.html" class="nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+
         <!-- Основной контент -->
         <main class="main">
-            <!-- Профиль -->
-            <section class="profile">
-                <div class="profile__card">
-                    <img class="profile__photo" src="images/photo.png" alt="Фото автора">
-                    <div class="profile__info">
-                        <h2 class="profile__name">Гармажанов Константин Михайлович</h2>
-                        <p class="profile__group">ЭФБО-16-24</p>
+            <div class="container">
+                <!-- Hero Section -->
+                <section class="hero">
+                    <div class="hero__content">
+                        <div class="hero__image">
+                            <img src="images/photo.png" alt="Фото автора" class="hero__photo">
+                        </div>
+                        <div class="hero__info">
+                            <h2 class="hero__greeting">Привет! Я студент</h2>
+                            <p class="hero__description">
+                                Группа ЭФБО-16-24<br>
+                                Увлекаюсь всяким и балуюсь всяким
+                            </p>
+                            <button class="button button--primary hero__button">
+                                Скачать резюме
+                            </button>
+                        </div>
                     </div>
-                </div>
-            </section>
-            <!-- Обо мне -->
-            <section class="about">
-                <h2 class="about__title">Обо мне</h2>
-                <div class="about__content">
-                    <p class="about__text">
-                        Я родился в Белгороде в 06м в центре.
-                        Глупость рано ударила в голову. В десять активно ругался.
-                        Еле выжил в школе. Воровал деньги в
-                        раздевалке.
-                    </p>
-                </div>
-            </section>
-            <!-- Навыки -->
-            <section class="skills">
-                <h2 class="skills__title">Мои навыки</h2>
-                <div class="skills__list">
-                    <div class="skill skill--f">
-                        <span class="skill__name">Скрытни</span>
+                </section>
+
+                <!-- Skills Section -->
+                <section class="skills">
+                    <h2 class="section-title">Мои навыки</h2>
+                    <div class="skills__grid">
+                        <div class="skill">
+                            <div class="skill__header">
+                                <span class="skill__name">HTML/CSS</span>
+                                <span class="skill__percent">90%</span>
+                            </div>
+                            <div class="skill__progress">
+                                <div class="skill__progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__header">
+                                <span class="skill__name">JavaScript</span>
+                                <span class="skill__percent">80%</span>
+                            </div>
+                            <div class="skill__progress">
+                                <div class="skill__progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__header">
+                                <span class="skill__name">Bootstrap</span>
+                                <span class="skill__percent">85%</span>
+                            </div>
+                            <div class="skill__progress">
+                                <div class="skill__progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__header">
+                                <span class="skill__name">React</span>
+                                <span class="skill__percent">60%</span>
+                            </div>
+                            <div class="skill__progress">
+                                <div class="skill__progress-bar" style="width: 60%"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="skill skill--s">
-                        <span class="skill__name">Ломал вайфай</span>
+                </section>
+
+                <!-- Projects Preview -->
+                <section class="projects-preview">
+                    <h2 class="section-title">Лучшие проекты</h2>
+                    <div class="projects-preview__grid">
+                        <article class="project-card">
+                            <div class="project-card__image">
+                                <img src="images/project1.jpg" alt="Личный сайт">
+                            </div>
+                            <div class="project-card__content">
+                                <h3 class="project-card__title">Личный сайт</h3>
+                                <p class="project-card__description">
+                                    Адаптивный сайт-портфолио на HTML и CSS
+                                </p>
+                                <div class="project-card__tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-card__image">
+                                <img src="images/project2.jpg" alt="Todo приложение">
+                            </div>
+                            <div class="project-card__content">
+                                <h3 class="project-card__title">Todo приложение</h3>
+                                <p class="project-card__description">
+                                    Приложение для управления задачами
+                                </p>
+                                <div class="project-card__tags">
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">LocalStorage</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-card__image">
+                                <img src="images/project3.jpg" alt="Интернет-магазин">
+                            </div>
+                            <div class="project-card__content">
+                                <h3 class="project-card__title">Интернет-магазин</h3>
+                                <p class="project-card__description">
+                                    Прототип магазина с корзиной товаров
+                                </p>
+                                <div class="project-card__tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">API</span>
+                                </div>
+                            </div>
+                        </article>
                     </div>
-                    <div class="skill skill--t">
-                        <span class="skill__name">Качал киберпанк на школьные компы</span>
-                    </div>
-                    <div class="skill skill--4">
-                        <span class="skill__name">Очень хороший и весёлый человек. Характер общительный.</span>
-                    </div>
-                </div>
-            </section>
-            <!-- Проекты -->
-            <section class="projects">
-                <h2 class="projects__title">Мой опыт работы:</h2>
-                <div class="projects__grid">
-                    <div class="project-card">
-                        <h3 class="project-card__title">Опыт 1</h3>
-                        <p class="project-card__desc">Гонял курей.</p>
-                    </div>
-                    <div class="project-card">
-                        <h3 class="project-card__title">Опыт 2</h3>
-                        <p class="project-card__desc">Убегал от гусей.</p>
-                    </div>
-                    <div class="project-card">
-                        <h3 class="project-card__title">Опыт 3</h3>
-                        <p class="project-card__desc">Что-то с собаками.</p>
-                    </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </main>
-        <!-- Подвал -->
+
+        <!-- Footer -->
         <footer class="footer">
-            <p class="footer__text">&copy; Москва 2025</p>
+            <div class="container">
+                <div class="footer__content">
+                    <p class="footer__copyright">&copy; 2025 StudentDev Portfolio</p>
+                    <div class="footer__links">
+                        <a href="mailto:student@edu.ru" class="footer__link">student@edu.ru</a>
+                        <a href="https://github.com" class="footer__link">GitHub</a>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 </body>
-
 </html>
